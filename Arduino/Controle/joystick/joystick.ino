@@ -1,6 +1,6 @@
-#define pinVrx A2
-#define pinVry A3
-#define pinSW 2
+#define pinVrx A3
+#define pinVry A2
+#define pinSW A4
 
 
 void setup(){
@@ -16,6 +16,13 @@ void loop(){
   int valorvrx =analogRead(pinVrx);
   int valorvry =analogRead(pinVry);
   bool statusSW = digitalRead(pinSW);
-  Serial.println(pinSW);
-  
+  Serial.println(statusSW);
+
+//  if (statusSW) {
+//    Serial.println("True");  
+//  }
+//  else{
+//    Serial.println("False");
+//  }
+//  
 }
